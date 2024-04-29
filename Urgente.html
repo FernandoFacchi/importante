@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-image: url(7301341_3617109.jpg) ;
+    }
+    #question {
+        margin-top: 100px;
+        background-image: url(papel-de-parede-fundo-varios-circulos-transparentes-completo.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 12px;
+        box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.288);
+    }
+    #buttons {
+        margin-top: 20px;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #yes {
+        background-color: rgba(92, 19, 160);
+        color: white;
+        border-radius: 10px;
+        border: none;
+    }
+    #no {
+        background-color: rgb(255, 0, 221, 0.932);
+        color: white;
+        border-radius: 10px;
+        border: none;
+    }
+</style>
+</head>
+<body>
+
+<div id="question">
+    <h2>Me dá uma chance &#129402;&#128151;?</h2>
+</div>
+
+<div id="buttons">
+    <button class="button" id="yes" onclick="redirection()">Sim</button>
+    <button class="button" id="no" onclick="moveButton()">Não</button>
+</div>
+
+<script>
+    function moveButton() {
+        var buttonNo = document.getElementById('no');
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+        var newLeft = Math.random() * (windowWidth - 100); // 100 é a largura do botão
+        var newTop = Math.random() * (windowHeight - 50); // 50 é a altura do botão
+        buttonNo.style.position = 'absolute';
+        buttonNo.style.left = newLeft + 'px';
+        buttonNo.style.top = newTop + 'px';
+    }
+    function redirection() {
+      window.location.href = "3510131300_1.jpg"
+    }
+</script>
+
+</body>
+</html>
+
